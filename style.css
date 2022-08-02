@@ -20,3 +20,18 @@
 #color-palette div:nth-last-of-type(4){
     background-color: black;
 }
+
+.pixel{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    
+}
+#pixel-board{
+    margin-top: 20px;
+}
+#pixel-board div{
+    margin-top: -2px;
+}
+
