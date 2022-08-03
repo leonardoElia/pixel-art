@@ -4,23 +4,24 @@
     width: 35px;
     height: 35px;
     margin: 10px;
+  
 }
 
 
 
-#color-palette div:nth-last-of-type(1){
+.vermelho{
     background-color: red;
 }
 
-#color-palette div:nth-last-of-type(2){
+.azul{
     background-color: blue;
 }
 
-#color-palette div:nth-last-of-type(3){
+.rosa{
     background-color: pink;
 }
 
-#color-palette div:nth-last-of-type(4){
+.preto{
     background-color: black;
 }
 
@@ -37,4 +38,14 @@
 #pixel-board div{
     margin-top: -2px;
 }
+
+.corPixel{
+    background-color: white;
+}
+
+
+
+
+
+
 
