@@ -44,18 +44,26 @@ const pixels = document.getElementsByClassName('pixel');
 function pintar(event){
     console.log('teste');
     let todasCores = document.getElementsByClassName('color');
+    
     for(let cont=0; cont < todasCores.length; cont +=1){
-      let corAtual = todasCores[cont];
+      
+    let corAtual = todasCores[cont];
       if(corAtual.classList.contains('selected')){
-       let corSelcionada = corAtual.classList.item(1);
-       event.target.classList.add(corSelcionada);
-       event.target.classList.remove('corPixel');
 
-       console.log(event.target);
+     if(event.target.classList.contains('preto')|| event.target.classList.contains('rosa') || event.target.classList.contains('azul') || event.target.classList.contains('vermelho') ){
+
+     }else{
+        let corSelcionada = corAtual.classList.item(1);
+        event.target.classList.add(corSelcionada);
+        event.target.classList.remove('corPixel');
+     }
+  
+    }
+
       }
     }
 
-}
+
 
 
 for(let conta =0; conta < pixels.length; conta +=1){
