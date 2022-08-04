@@ -50,13 +50,18 @@ function pintar(event){
     let corAtual = todasCores[cont];
       if(corAtual.classList.contains('selected')){
 
-     if(event.target.classList.contains('preto')|| event.target.classList.contains('rosa') || event.target.classList.contains('azul') || event.target.classList.contains('vermelho') ){
-
-     }else{
+        let arrayDeCores = ['preto', 'rosa', 'azul','vermelho'];
+        for(let verificaCor=0; verificaCor < arrayDeCores.length; verificaCor +=1){
+            let classeAtual = arrayDeCores[verificaCor];
+             
+            if(event.target.classList.contains(classeAtual)){
+                event.target.classList.remove(classeAtual);
+            }
+        }
         let corSelcionada = corAtual.classList.item(1);
         event.target.classList.add(corSelcionada);
         event.target.classList.remove('corPixel');
-     }
+     
   
     }
 
