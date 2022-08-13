@@ -1,5 +1,4 @@
 //Fazendo as 25 divs
-
 const divs = document.querySelectorAll('#pixel-board div'); // o lenght é 5
 for(let contadora =0; contadora < divs.length; contadora +=1){
     for(let cont=1; cont<=5; cont +=1){
@@ -8,9 +7,7 @@ for(let contadora =0; contadora < divs.length; contadora +=1){
     quadrado.classList.add('corPixel');
     divs[contadora].appendChild(quadrado)
 }
-
-
-} 
+  } 
 
 //Fazendo a cor preta ficar seleciionada
 const corPreta = document.getElementsByClassName('color')[0];
@@ -34,7 +31,6 @@ for(let index =0; index < cores.length; index +=1){
     }
 }
 }
-
 
 paletaDecores.addEventListener('click', seleciona);
 
@@ -61,20 +57,34 @@ function pintar(event){
         let corSelcionada = corAtual.classList.item(1);
         event.target.classList.add(corSelcionada);
         event.target.classList.remove('corPixel');
-     
-  
+     }
+    }  
     }
-
-      }
-    }
-
-
-
 
 for(let conta =0; conta < pixels.length; conta +=1){
-
-
 pixels[conta].addEventListener('click', pintar);
-
 }
 
+
+//Fazendo limpar
+const botaoLimpar = document.getElementById('limpar');
+
+function limpar(){
+    const todasDivs = document.querySelectorAll('#pixel-board div');
+    const cores = ['preto', 'rosa', 'azul', 'vermelho'];
+
+    for(let contadora =0; contadora<todasDivs.length; contadora +=1){
+        
+        for(let index=0; index<cores.length; index +=1){
+            if(todasDivs[contadora].classList.contains(cores[index])){
+                todasDivs[contadora].classList.remove(cores[index]);
+                todasDivs[contadora].classList.add('corPixel');
+
+            }
+        }
+    }
+
+    
+}
+
+botaoLimpar.addEventListener('click', limpar);

@@ -1,11 +1,33 @@
+header{
+    background-color:#4d4d4d;
+    width: 100%;
+    top: 0%;
+    position: absolute;
+}
+
+
+body{
+  background-color: #637566;  
+  margin: 0%;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .color{
     border: 1px solid black;
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 43px;
+    height: 43px;
     margin: 10px;
   
 }
+
 
 
 
@@ -26,14 +48,16 @@
 }
 
 .pixel{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border: 1px solid black;
     display: inline-block;
     
 }
 #pixel-board{
-    margin-top: 20px;
+    margin-top: 40px;
+  
+    
 }
 #pixel-board div{
     margin-top: -2px;
@@ -41,6 +65,28 @@
 
 .corPixel{
     background-color: white;
+}
+
+#limpar{
+    position: relative;
+    margin-top: 15px;
+    width: 250px;
+    height: 30px;
+    background-color: #d69e60;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#color-palette{
+    margin-top: 100px;
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
 }
 
 
