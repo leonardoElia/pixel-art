@@ -9,3 +9,8 @@ Foi um projeto fundamental para aperfeiçoar minha lógica e enteder a importân
 * javascript
 * html
 * css
+
+## como rodar o projeto
+faça o clone desde repositorio
+instale a extenção Go Live a patir do seu vsCode
+aperto no canto inferior direito o botão Go Live
