@@ -14,6 +14,6 @@ Foi um projeto fundamental para aperfeiçoar minha lógica e enteder a importân
 [Projeto pixel-art](https://pixel-art-pearl.vercel.app/)
 
 ## como rodar o projeto localmente
-- faça o clone desde repositorio
-- instale a extenção Go Live a patir do seu vsCode
-- aperto no canto inferior direito o botão Go Live
+1. faça o clone desde repositorio 1
+2. instale a extenção Go Live a patir do seu vsCode
+3. aperto no canto inferior direito o botão Go Live
