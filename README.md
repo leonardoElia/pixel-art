@@ -10,7 +10,10 @@ Foi um projeto fundamental para aperfeiçoar minha lógica e enteder a importân
 * html
 * css
 
-## como rodar o projeto
+## acesse o link para visualizar a aplicação
+[Projeto pixel-art](https://pixel-art-pearl.vercel.app/)
+
+## como rodar o projeto localmente
 faça o clone desde repositorio
 instale a extenção Go Live a patir do seu vsCode
 aperto no canto inferior direito o botão Go Live
